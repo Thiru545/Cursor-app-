@@ -1,0 +1,93 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f7f7fa;
+}
+
+.Bookstore-header {
+  background: #2d3142;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.Bookstore-main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Bookstore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.Bookstore-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s;
+}
+.Bookstore-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.Bookstore-cover {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.Bookstore-author {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0.25rem 0;
+}
+.Bookstore-price {
+  color: #2d3142;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+.Bookstore-buy {
+  background: #ef8354;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.Bookstore-buy:hover {
+  background: #d76a3c;
+}
+.Bookstore-footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .Bookstore-main {
+    padding: 1rem 0.25rem;
+  }
+  .Bookstore-card {
+    padding: 1rem 0.5rem;
+  }
+  .Bookstore-header {
+    padding: 1.5rem 0.5rem 0.75rem 0.5rem;
+  }
+}
