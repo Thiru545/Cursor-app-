@@ -1,0 +1,6 @@
+/* Reset App styles for Material-UI usage */
+.App {
+  text-align: center;
+}
+
+/* Remove logo and header styles, rely on MUI */
